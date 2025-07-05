@@ -1,0 +1,233 @@
+/*-------------------QUICK SETTINGS------------------------*/
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+    background-color: #ffffff;
+    color: #434455;
+}
+img {
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.container {
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px 0 15px;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; 
+}
+/*-------------------LOGO------------------------*/
+.logo {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+.studio {
+    color: #2e2f42;
+}
+.finale .studio {
+    color: #F4F4FD;
+}
+/*-------------------HEADER--------------------*/
+.navigation {
+    border-bottom: 1px solid #e7e9fc;
+}
+.navigation .logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+}
+.page {
+    display: block;
+    color: #2E2F42;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 24px 0;
+}
+.page:hover, .page:focus {
+    color: #404BBF;
+}
+.contacts {
+    font-style: normal;
+    display: flex;
+    gap: 40px;
+}
+.contact {
+    color: #434455;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 24px 0;
+}
+.contact:hover, .contact:focus {
+    color: #404bbf;
+}
+/*-------------------FIRST SECTION------------------------*/
+.banner {
+    color: #ffffff;
+    background-color: #2E2F42;
+    padding: 188px 0;
+}
+.banner .container {
+    align-items: center;
+    justify-content: center;
+}
+.head {
+    margin: 0px auto;
+    max-width: 496px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+}
+.service {
+    display: block;
+    background-color: #4D5AE5;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin: 0px auto;
+    cursor: pointer;
+    border: 0;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+}
+.service:hover,
+.service:focus {
+    background-color: #404BBF;
+}
+/*-------------------SECOND SECTION------------------------*/
+.subheader {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.benefits-list{
+    width: calc((100% - 24px)/4);
+}
+.list-heading {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2e2f42;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px  ;
+}
+.desc {
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+/*-------------------THIRD SECTION------------------------*/
+.team {
+    background-color: #F4F4FD;
+}
+.team .subheader, .portfolio .subheader {
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.list {
+    display: flex;
+    gap: 24px;
+}
+.team .example{
+    background-color: #ffffff;
+    letter-spacing: 0.02em;
+    width: calc((100% - 72px)/4);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.team .list-heading {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team .list-about {
+    text-align: center;
+}
+.team .text {
+    padding: 32px 0;
+}
+/*-------------------FORTH SECTION------------------------*/
+.apps {
+    display: flex;
+    gap: 48px 24px;
+    flex-wrap: wrap;
+}
+.apps .text {
+    padding: 32px 16px 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+.portfolio .apps .example {
+    width: calc((100% - 48px)/3);
+}
+/*-------------------FOOTER------------------------*/
+.finale {
+    background-color: #2E2F42 ;
+    color: #F4F4FD;
+    padding: 100px 0;
+}
+.finale .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.footer-desc{
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
