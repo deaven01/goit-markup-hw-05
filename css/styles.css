@@ -356,6 +356,7 @@ p {
 
 .finale .container {
     align-items: baseline;
+    display: flex;
 }
 .finale .logo {
     display: inline-block;
