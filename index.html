@@ -363,9 +363,12 @@
             <div class="subscribe">
                 <p class="footer-header">Subscribe</p>
                 <form class="subscribe-form">
-                    <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
-                    <button class="subscribe-btn" type="submit">Subscribe<svg class="subscribe-icon" height="24" width="24">
-                <use href="./images/icons.svg#icon-send"></use></svg> </button>
+                    <label class="subscribe-label">
+                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
+                        <button class="subscribe-btn" type="submit">Subscribe<svg class="subscribe-icon" height="24" width="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg> </button>
+                    </label>
                 </form>
             </div>
         </div>
@@ -374,27 +377,34 @@
         <div class="modal">
             <button class="close-btn" type="button">
                 <svg class="icon" height="8" width="8">
-                    <use href="/images/icons.svg#icon-close"></use>
+                    <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <p class="modal-heading">Leave your contacts and we will call you back</p>
             <form class="form">
-                <label class="form-label">
-                    Name
-                    <input class="input field" type="text" name="username" />
-                </label>
-                <label class="form-label">
-                    Phone
-                    <input class="input field" type="tel" name="phone" />
-                </label>
-                <label class="form-label">
-                    Email
-                    <input class="input field" type="email" name="email" />
-                </label>
-                <label class="form-label">
-                    Comment
-                    <textarea class="textarea field" rows="8" placeholder="Text input" name="comment"></textarea>
-                </label>
+                <div class="form-window">
+                    <label class="form-label" for="user-name">
+                        Name
+                        <div class="form-input">
+                            <input class="input" id="user-name" type="text" name="user-name" />
+                            <svg class="icon" height="24" width="18">
+                                <use href="./images/icons.svg#icon-account"></use>
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="form-label">
+                        Phone
+                        <input class="input field" type="tel" name="phone" />
+                    </label>
+                    <label class="form-label">
+                        Email
+                        <input class="input field" type="email" name="email" />
+                    </label>
+                    <label class="form-label">
+                        Comment
+                        <textarea class="textarea field" rows="8" placeholder="Text input" name="comment"></textarea>
+                    </label>
+                </div>
             </form>
             <form class="policy">
                 <input class="policy-checkbox" type="checkbox" name="policy" value="policy" id="policy">

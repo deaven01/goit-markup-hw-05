@@ -424,34 +424,39 @@ p {
 }
 .subscribe-input {
     width: 264px;
-    background: none;
-    border: 1px solid #fff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
     border-radius: 4px;
+    font-size: 12px;
     height: 40px;
-    padding: 8px 16px;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    line-height: 2;
+    letter-spacing: 0.04em;
 }
 .subscribe-input::placeholder {
     color: #fff;
-    font-size: 12px;
-    letter-spacing: 0.04em;
+}
+.subscribe-form {
+    display: flex;
+    gap: 24px;
 }
 .subscribe-btn {
-    margin-left: 24px;
+    min-width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     padding: 8px 24px;
     border-radius: 4px;
     background-color: #4D5AE5;
     border: none;
     color: white;
     font-size: 16px;
-    min-width: 165px;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 24px;
     fill: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 }
 .subscribe-icon {
     margin-left: 16px;
@@ -459,16 +464,14 @@ p {
 /*-------------------OVERLAY FORM------------------------*/
 .modal-overlay {
     position: fixed;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: auto;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 999;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -479,13 +482,29 @@ p {
 .modal {
     background-color: #FCFCFC;
     border-radius: 4px;
+    top: 50%;
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     overflow-y: auto;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay .close-btn {
+.close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #E7E9FC;
     fill: #2E2F42;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border:none;
     width: 24px;
     height: 24px;
@@ -494,39 +513,66 @@ p {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 24px;
     margin-left: auto;
+}
+.close-btn:hover, .close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+.close-btn .icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn:hover .icon, .close-btn:focus .icon {
+    fill: #ffffff
 }
 .modal-heading {
     font-weight: 500;
     font-size: 16px;
-    margin: 16px 24px;
+    margin-bottom: 16px;
     text-align: center;
+    color: #2E2F42;
+}
+.form-window {
+    margin-bottom: 8px;
 }
 .form-label {
-    display: flex;
-    flex-direction: column;
-    margin: 0 24px;
-    width: 360px;
-    line-height: 40px;
+    display: block;
+    line-height: 1.17;
     font-size: 12px;
     letter-spacing: 0.04em;
-    line-height: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     color: #8E8F99;
+}
+.form-input {
+    position: relative;
 }
 .input {
     height: 40px;
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:focus {
+    border-color: #4D5AE5;
+}
+.input .icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:focus .icon {
+    fill: #4D5AE5;
 }
 .field {
     margin-top: 4px;
-    border-radius: 4px;
     width: 360px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-}
-.field:focus {
-        border: 1px solid #4D5AE5;
-        outline: none;
 }
 textarea {
     resize: none;
