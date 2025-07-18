@@ -392,30 +392,40 @@
                     <label class="form-label" for="user-name">Name</label>
                     <div class="form-input">
                         <input class="input" id="user-name" type="text" name="user-name" />
-                        <svg class="icon" height="24" width="18">
+                        <svg class="form-icon" height="24" width="18">
                             <use href="./images/icons.svg#icon-account"></use>
                         </svg>
                     </div>
-                    <label class="form-label">
-                        Phone
-                        <input class="input field" type="tel" name="phone" />
-                    </label>
-                    <label class="form-label">
-                        Email
-                        <input class="input field" type="email" name="email" />
-                    </label>
-                    <label class="form-label">
-                        Comment
-                        <textarea class="textarea field" rows="8" placeholder="Text input" name="comment"></textarea>
-                    </label>
                 </div>
+                <div class="form-window">
+                    <label for="phone" class="form-label">Phone</label>
+                    <div class="form-input">
+                        <input class="input" id="phone" type="tel" name="phone" />
+                        <svg class="form-icon" height="24" width="18">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div> 
+                <div class="form-window">
+                    <label class="form-label" for="email">Email</label>
+                    <div class="form-input">
+                        <input class="input" type="email" id="email" name="email" />
+                        <svg class="form-icon" height="24" width="18">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-comment">
+                    <label class="form-label" for="user-comment">Comment</label>
+                    <textarea class="field" rows="8" placeholder="Text input" name="user-comment"></textarea>
+                </div>
+                <div class="form-policy">
+                    <input class="privacy-checkbox visually-hidden" type="checkbox" name="user-privacy" value="true" id="user-privacy">
+                    <label class="privacy-label" for="user-privacy">I accept the terms and conditions of the <a class="policy-link"
+                            href="">Privacy Policy</a></label>
+                </div>
+                <button class="send-btn" type="submit">Send</button>
             </form>
-            <form class="policy">
-                <input class="policy-checkbox" type="checkbox" name="policy" value="policy" id="policy">
-                <label class="policy-label" for="policy">I accept the terms and conditions of the <a class="policy-link"
-                        href="">Privacy Policy</a></label>
-            </form>
-            <button class="send-btn" type="submit">Send</button>
         </div>
     </div>
 </body>
