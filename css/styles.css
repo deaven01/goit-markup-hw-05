@@ -617,7 +617,6 @@ input[type="checkbox"]:checked {
     accent-color: #404BBF;
 }
 .privacy-label {
-    margin-left: 8px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -633,11 +632,9 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
-.textarea-icon {
-    fill: #2E2F42;
-}
-.privacy-checkbox:checked .checkbox-icon {
+.privacy-checkbox:checked + .privacy-label .checkbox-icon {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
