@@ -417,12 +417,19 @@
                 </div>
                 <div class="form-comment">
                     <label class="form-label" for="user-comment">Comment</label>
-                    <textarea class="field" rows="8" placeholder="Text input" name="user-comment"></textarea>
+                    <textarea class="field" rows="8" placeholder="Text input" id="user-comment" name="user-comment"></textarea>
                 </div>
                 <div class="form-policy">
                     <input class="privacy-checkbox visually-hidden" type="checkbox" name="user-privacy" value="true" id="user-privacy">
-                    <label class="privacy-label" for="user-privacy">I accept the terms and conditions of the <a class="policy-link"
-                            href="">Privacy Policy</a></label>
+                    <label class="privacy-label" for="user-privacy">
+                        <span class="checkbox-icon">
+                            <svg class="textarea-icon" height="8" width="10">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the 
+                        <a class="policy-link" href="">Privacy Policy</a>
+                    </label>
                 </div>
                 <button class="send-btn" type="submit">Send</button>
             </form>
